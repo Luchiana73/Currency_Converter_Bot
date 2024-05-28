@@ -1,4 +1,4 @@
-TOKEN = '7110540628:AAEu546btQhLSu35O0jvgL_KvRNrIe9n8no'
+TOKEN = ${{secrets.TOKEN}}
 
 keys = {
     'доллар': 'USD',
