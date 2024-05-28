@@ -28,6 +28,8 @@ class CurrencyConverter:
             errors.append(f'- Не удалось обработать валюту: {quote}. Пожалуйста, проверьте правильность написания.')
         try:
             amount = float(amount)
+            if amount < 0:
+                errors.append(f'- Сумма не может быть меньше нуля. Сейчас вы ввели {amount}.')
         except ValueError:
             errors.append(f'- Сумма ({amount}) должна быть введена в числовом формате.')
 
